@@ -1,0 +1,22 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Class="pizzabesteller.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Connect To Server&#xA;" HorizontalAlignment="Left" Margin="405,179,0,0" VerticalAlignment="Top" Click="Button_Click" />
+        <TextBlock x:Name="Stat" HorizontalAlignment="Left" Margin="390,273,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Initialized="Stat_Initialized" />
+        <Button Content="Getmenu&#xA;" HorizontalAlignment="Left" Margin="397,132,0,0" VerticalAlignment="Top" Click="Button_Click_1" Height="28" Width="215" />
+        <ListView Margin="21,36,483,77" SelectionChanged="ListView_SelectionChanged">
+            <ListView.View>
+                <GridView>
+
+                    <GridViewColumn />
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>
